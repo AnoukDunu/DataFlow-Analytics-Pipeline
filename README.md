@@ -24,6 +24,7 @@ Streamlit
 REST API (FakeStore API)
 
 ⚙️ Key Features
+
 ✅ API-based data ingestion
 ✅ Staging and dimensional data modelling
 ✅ Data transformation and cleaning with pandas
