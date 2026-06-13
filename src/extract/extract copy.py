@@ -11,9 +11,16 @@ def extract(api_url):
         response.raise_for_status()
 
         data = response.json()
-        df = pd.DataFrame(data)
-        print ("Data extraction successful heck yeah.")
-        return df
+
+        # although code 200 indicates a successful connection, it doesn't guarantee that the response body contains valid JSON data.
+        # So I need to verify the payload data before parsing. 
+        if data.get('status') != 'success':
+            print(f"API returned an error: {data.get('message', 'Unknown error')}")
+            return None
+        else:
+            # afterwards, safely parse the JSON response and convert it to a DataFrame
+            df = pd.DataFrame(data)
+            return df
 
     except requests.exceptions.RequestException as e:
         print(f"An error occurred while making the API request: {e}")
