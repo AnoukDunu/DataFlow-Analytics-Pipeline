@@ -1,0 +1,2 @@
+# This is the main entry point for the application. It initializes the application and starts the main loop.
+# The pipeline orchestration is also handled here, ensuring that all components are properly initialized and executed in the correct order.
