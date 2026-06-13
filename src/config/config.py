@@ -7,12 +7,12 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Database configuration
-def get_db_engine():
+def get_engine():
     db_host = os.getenv('DB_HOST')
     db_name = os.getenv('DB_NAME')
     db_user = os.getenv('DB_USER')
     db_password = os.getenv('DB_PASSWORD')
 
     # Create the database engine
-    db_engine = create_engine(f'postgresql://{db_user}:{db_password}@{db_host}/{db_name}')
-    return db_engine
+    engine = create_engine(f'postgresql://{db_user}:{db_password}@{db_host}/{db_name}')
+    return engine

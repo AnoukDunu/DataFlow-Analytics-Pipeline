@@ -12,7 +12,6 @@ def extract(api_url):
 
         data = response.json()
         df = pd.DataFrame(data)
-        print ("works!")
         return df
 
     except requests.exceptions.RequestException as e:
