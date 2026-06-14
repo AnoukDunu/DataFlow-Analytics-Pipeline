@@ -13,6 +13,6 @@ def get_connection():
     except Exception as e:
         print(f"An error occurred while connecting to the database: {e}")
         return None
-    finally:
-        print("Closing database connection.")
-        connection.close()
+    # finally:
+    #     print("Closing database connection.")
+    #     connection.close()
