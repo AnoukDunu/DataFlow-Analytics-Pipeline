@@ -12,6 +12,11 @@ def extract(api_url):
 
         data = response.json()
         df = pd.DataFrame(data)
+
+        # The below line is added to simulate real-world issues like duplicate data or messy data. To add depth to the data and projhect.
+        # please hire me :(
+        df = pd.concat([df, df.iloc[:3]])
+        
         print("Data extraction successful!")
         return df
 
