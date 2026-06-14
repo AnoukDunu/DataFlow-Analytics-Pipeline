@@ -14,6 +14,7 @@ def load_staging(df):
 
     staging_df.to_sql('stg_products', con=conn, if_exists='replace', index=False, dtype=dtype_mapping)
     print("Data loaded into staging table successfully.")
+    
     if conn is not None:
         conn.close()
 
