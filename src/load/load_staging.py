@@ -16,3 +16,11 @@ def load_staging(df):
     print("Data loaded into staging table successfully.")
     if conn is not None:
         conn.close()
+
+
+# Below is the explanation of the fix for the transformed data not being loaded into the final table:
+# The issue was caused by load_staging mutating the original DataFrame before transformation:
+
+# load_staging.py now uses staging_df = df.copy(deep=True) so staging serialization does not alter the source data.
+# transform.py keeps a copy of the original DataFrame before processing.
+# load_final.py now closes the DB connection in a finally block.
