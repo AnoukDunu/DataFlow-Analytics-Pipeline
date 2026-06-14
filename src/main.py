@@ -5,6 +5,7 @@
 from extract.extract import extract
 from database.connection import get_connection
 from load.load_staging import load_staging
+from transform.transform import transform_data
 
 def run_pipeline():
     # Load configuration
@@ -21,13 +22,17 @@ def run_pipeline():
     if df is not None:
         print("Data extraction successful.")
         print(df.head())  # Display the first few rows of the extracted DataFrame
+        
         # Load data into staging table ========TEMPORARY========
         load_staging(df)
-        return df
+        # transforming data
+        cleaned_df = transform_data(df)
+        # load cleaned and transformed data into the final table
+
+        return cleaned_df
     else:
         print("Data extraction failed.")
         return None
-    
 
  
 
