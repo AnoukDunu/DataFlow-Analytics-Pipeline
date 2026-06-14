@@ -1,5 +1,11 @@
+from utilities.logger import get_logger
+
+logger = get_logger(__name__)
 
 def transform_data(df):
+
+    logger.info("Starting data transformation...")
+    
     df = df.copy()
     df = df[['id', 'title', 'price', 'description', 'category', 'image', 'rating']]
 
@@ -10,7 +16,7 @@ def transform_data(df):
     # Drop the original 'rating' column as it's no longer needed
     df = df.drop(columns=['rating'])
 
-    # quality checks!
+    logger.info("Performing quality checks...")
     df = df.dropna()
     df = df[df['price'] > 0]  #Remove products with non-positive prices
 
@@ -20,5 +26,5 @@ def transform_data(df):
     # estimating the revenue using the current price and number of reviews
     df['estimated_revenue'] = df['price'] * df['rating_count']
 
-    print("Data transformation successful.")
+    logger.info("Data transformation completed successfully.")
     return df
