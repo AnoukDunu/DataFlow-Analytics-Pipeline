@@ -21,7 +21,8 @@ CREATE TABLE cln_products (
     description TEXT,
     category VARCHAR(255),
     image VARCHAR(255),
-    rating_rating FLOAT,
+    rating_rate FLOAT,
     rating_count INTEGER,
+    estimated_revenue FLOAT,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
