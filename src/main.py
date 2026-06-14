@@ -7,7 +7,6 @@ from database.connection import get_connection
 from load.load_staging import load_staging
 from transform.transform import transform_data
 from load.load_final import load_final
-from load.load_final import load_final as load_final_copy
 
 def run_pipeline():
     # Load configuration
@@ -29,7 +28,7 @@ def run_pipeline():
         cleaned_df = transform_data(df)
         # load cleaned and transformed data into the final table
         # load_final(cleaned_df)
-        load_final_copy(cleaned_df)
+        load_final(cleaned_df)
         return cleaned_df
     else:
         print("Data extraction failed.")

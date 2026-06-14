@@ -3,6 +3,7 @@ import pandas as pd
 
 def load_final(df):
     # use an engine-managed transaction so commits happen automatically
+    print("Starting LOAD_FINAL...")
     try:
         with engine.begin() as conn:
             existing = pd.read_sql("SELECT id FROM cln_products", conn)

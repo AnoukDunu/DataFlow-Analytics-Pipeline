@@ -2,6 +2,7 @@ from database.connection import get_connection
 import pandas as pd
 
 def load_final(df):
+    print("Starting LOAD_FINAL COPY...")
     conn = get_connection()
     if conn is None:
         print("Failed to connect to the database.")
