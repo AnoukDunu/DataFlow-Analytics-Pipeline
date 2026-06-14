@@ -1,5 +1,6 @@
 
 def transform_data(df):
+    df = df.copy()
     df = df[['id', 'title', 'price', 'description', 'category', 'image', 'rating']]
 
     # Extracting the nested JSON in 'rating' column into separate columns
