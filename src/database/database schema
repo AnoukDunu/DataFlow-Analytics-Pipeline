@@ -15,8 +15,7 @@ CREATE TABLE stg_products (
 
 ========= FINAL TABLE (cleaned data) =========
 CREATE TABLE cln_products (
-    id SERIAL PRIMARY KEY,
-    product_id VARCHAR(255) UNIQUE,
+    id PRIMARY KEY,
     title VARCHAR(255),
     price DECIMAL(10, 2),
     description TEXT,
