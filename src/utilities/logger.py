@@ -25,3 +25,5 @@ def get_logger(name=__name__):
         # Add the handlers to the logger
         logger.addHandler(file_handler)
         logger.addHandler(console_handler)
+
+    return logger
