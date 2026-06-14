@@ -2,7 +2,7 @@ This file is purely just to write the database schema so it can be used in the P
 
 ========= STAGING TABLE (raw data) =========
 CREATE TABLE stg_products (
-    id VARCHAR(255),
+    id INT,
     title VARCHAR(255),
     price DECIMAL(10, 2),
     description TEXT,
@@ -15,7 +15,7 @@ CREATE TABLE stg_products (
 
 ========= FINAL TABLE (cleaned data) =========
 CREATE TABLE cln_products (
-    id PRIMARY KEY,
+    id INT PRIMARY KEY,
     title VARCHAR(255),
     price DECIMAL(10, 2),
     description TEXT,
