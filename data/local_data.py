@@ -1,2 +1,0 @@
-# This folder is for storing local data files that are used by the project and this file is a placeholder.
-# This project version will focus more on data extraction via REST APIs but this folder will exist just in case.
