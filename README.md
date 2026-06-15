@@ -6,13 +6,21 @@ DataFlow Analytics Pipeline is an end-to-end ETL project that simulates a real-w
 This project demonstrates core data engineering concepts including API ingestion, transformation logic, data quality checks, and incremental loading.
 
 Project Features
+
 🔄 End-to-end ETL pipeline
+
 🧩 Modular project structure
+
 📦 Data transformation using Pandas
+
 🛢️ PostgreSQL database integration
+
 🔍 Data quality checks before loading
+
 📝 Centralised logging system
+
 🌐 REST API based data ingestion/extraction
+
 📊 Dashboard for interactive data visualisation
 
 Pipeline Architecture
@@ -47,9 +55,13 @@ pip install -r requirements.txt
 Create a .env file:
 
 DB_HOST=localhost
+
 DB_NAME=etl_db
+
 DB_USER=postgres
+
 DB_PASSWORD=yourpassword
+
 DB_PORT=5432
 
 5. Set up PostgreSQL database
