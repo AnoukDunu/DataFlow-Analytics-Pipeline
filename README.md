@@ -7,21 +7,21 @@ This project demonstrates core data engineering concepts including API ingestion
 
 Project Features
 
-🔄 End-to-end ETL pipeline
+-- End-to-end ETL pipeline
 
-🧩 Modular project structure
+-- Modular project structure
 
-📦 Data transformation using Pandas
+-- Data transformation using Pandas
 
-🛢️ PostgreSQL database integration
+-- PostgreSQL database integration
 
-🔍 Data quality checks before loading
+-- Data quality checks before loading
 
-📝 Centralised logging system
+-- Centralised logging system
 
-🌐 REST API based data ingestion/extraction
+-- REST API based data ingestion/extraction
 
-📊 Dashboard for interactive data visualisation
+-- Dashboard for interactive data visualisation
 
 Pipeline Architecture
 
@@ -31,14 +31,14 @@ API → Extract → Staging Table → Transform → Quality Checks → Final Tab
 Project Structure
 <img width="1136" height="1252" alt="image" src="https://github.com/user-attachments/assets/0b61cf55-5757-40f9-a9d6-240ce45d5221" />
 
-🛠️ Tech Stack
-Python
-PostgreSQL
-Streamlit
-REST API
+Tech Stack
+-- Python
+-- PostgreSQL
+-- Streamlit
+-- REST API
 
 
-🔧 Setup Instructions (Mac)
+Setup Instructions (Mac)
 1. Clone the repository
 git clone <your-repo-url>
 cd etl_pipeline_project
