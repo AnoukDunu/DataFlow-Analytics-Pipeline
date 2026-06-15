@@ -5,56 +5,44 @@ DataFlow Analytics Pipeline is an end-to-end ETL project that simulates a real-w
 
 This project demonstrates core data engineering concepts including API ingestion, transformation logic, data quality checks, and incremental loading.
 
-🧠 Key Features
+Project Features
 🔄 End-to-end ETL pipeline
 🧩 Modular project structure
 📦 Data transformation using Pandas
 🛢️ PostgreSQL database integration
 🔍 Data quality checks before loading
 📝 Centralised logging system
-🌐 Data access via REST API
-📊 Dashboard for data visualisation
+🌐 REST API based data ingestion/extraction
+📊 Dashboard for interactive data visualisation
 
 Pipeline Architecture
 
 API → Extract → Staging Table → Transform → Quality Checks → Final Table → Dashboard
 
-Project Structure
 
+Project Structure
 <img width="1136" height="1252" alt="image" src="https://github.com/user-attachments/assets/0b61cf55-5757-40f9-a9d6-240ce45d5221" />
 
 🛠️ Tech Stack
 Python
 PostgreSQL
 Streamlit
-REST API (FakeStore API)
+REST API
 
-⚙️ Key Features
-
-✅ API-based data ingestion
-
-✅ Staging and dimensional data modelling
-
-✅ Data transformation and cleaning with pandas
-
-✅ Data quality checks (nulls, duplicates, validation rules)
-
-✅ Incremental loading to avoid duplicate records
-
-✅ Error handling and logging
-
-✅ Interactive dashboard for analytics
 
 🔧 Setup Instructions (Mac)
 1. Clone the repository
 git clone <your-repo-url>
 cd etl_pipeline_project
-2. Create virtual environment
+
+3. Create virtual environment
 python3 -m venv venv
 source venv/bin/activate
-3. Install dependencies
+
+4. Install dependencies
 pip install -r requirements.txt
-4. Configure environment variables
+
+5. Configure environment variables
 
 Create a .env file:
 
@@ -63,11 +51,14 @@ DB_NAME=etl_db
 DB_USER=postgres
 DB_PASSWORD=yourpassword
 DB_PORT=5432
+
 5. Set up PostgreSQL database
 Create database: etl_db
 Create required tables (if not automated in load.py)
-6. Run the ETL pipeline
+
+7. Run the ETL pipeline
 python main.py
+
 6. Run the Streamlit dashboard
 streamlit run app.py
 
