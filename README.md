@@ -20,41 +20,8 @@ Pipeline Architecture
 API → Extract → Staging Table → Transform → Quality Checks → Final Table → Dashboard
 
 Project Structure
-DataFlow-Analytics-Pipeline
-│
-├── data/                         # Optional: local test data
-│
-├── src/                          # Core pipeline code
-│   │
-│   ├── config/                   # Configuration management
-│   │   └── config.py
-│   │
-│   ├── extract/                  # Data ingestion layer
-│   │   └── extract.py
-│   │
-│   ├── transform/                # Data transformation logic
-│   │   └── transform.py
-│   │
-│   ├── load/                     # Data loading logic
-│   │   ├── load_staging.py
-│   │   └── load_final.py
-│   │
-│   ├── database/                       # Database connection logic
-│   │   └── connection.py
-│   │
-│   ├── utilities/                    # Reusable helpers
-│   │   ├── logger.py
-│   │   └── quality_checks.py
-│   │
-│   └── main.py                   # Pipeline orchestrator
-│
-├── dashboard/                    # Streamlit dashboard
-│   └── app.py
-│
-├── .env                          # Environment variables
-├── requirements.txt
-└── README.md
 
+<img width="1136" height="1252" alt="image" src="https://github.com/user-attachments/assets/0b61cf55-5757-40f9-a9d6-240ce45d5221" />
 
 🛠️ Tech Stack
 Python
