@@ -1,11 +1,11 @@
 # DataFlow-Analytics-Pipeline
-🚀 Overview
+#Project Overview
 
 DataFlow Analytics Pipeline is an end-to-end ETL project that simulates a real-world data engineering workflow. It ingests product data from a REST API, processes and validates the data, stores it in a PostgreSQL database using a staged architecture, and visualises key business insights through an interactive dashboard.
 
-This project demonstrates core data engineering concepts including API ingestion, data modelling, transformation logic, data quality checks, and incremental loading.
+This project demonstrates core data engineering concepts including API ingestion, transformation logic, data quality checks, and incremental loading.
 
-🧠 Architecture
+Pipeline Architecture
 
 API → Extract → Staging Table → Transform → Final Table → Dashboard
 
