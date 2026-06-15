@@ -38,3 +38,6 @@ REST API (FakeStore API)
 ✅ Error handling and logging
 
 ✅ Interactive dashboard for analytics
+
+Troubleshooting:
+Due to a pathing issue (which will be fixed later on), to run the code and view the streamlit dashboard, run the following terminal command from the project root: PYTHONPATH=src streamlit run dashboard/app.py
