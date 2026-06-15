@@ -5,6 +5,7 @@ from load.load_staging import load_staging
 from transform.transform import transform_data
 from load.load_final import load_final
 from utilities.logger import get_logger
+from utilities.quality_checks import run_all_checks
 
 logger = get_logger(__name__)
 
@@ -25,8 +26,9 @@ def run_pipeline():
         load_staging(df)
         # transforming data
         cleaned_df = transform_data(df)
+        # run quality checks on the cleaned data
+        run_all_checks(cleaned_df)
         # load cleaned and transformed data into the final table
-        # load_final(cleaned_df)
         load_final(cleaned_df)
         return cleaned_df
     else:
