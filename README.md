@@ -1,44 +1,37 @@
 # DataFlow Analytics Pipeline
-Project Overview
+## Project Overview
 
 DataFlow Analytics Pipeline is an end-to-end ETL project that simulates a real-world data engineering workflow. It ingests product data from a REST API, processes and validates the data, stores it in a PostgreSQL database using a staged architecture, and visualises key business insights through an interactive dashboard.
 
 This project demonstrates core data engineering concepts including API ingestion, transformation logic, data quality checks, and incremental loading.
 
-Project Features
+## Project Features
 
--- End-to-end ETL pipeline
+-- End-to-end ETL pipeline\
+-- Modular project structure\
+-- Data transformation using Pandas\
+-- PostgreSQL database integration\
+-- Data quality checks before loading\
+-- Centralised logging system\
+-- REST API based data ingestion/extraction\
+-- Dashboard for interactive data visualisation\
 
--- Modular project structure
-
--- Data transformation using Pandas
-
--- PostgreSQL database integration
-
--- Data quality checks before loading
-
--- Centralised logging system
-
--- REST API based data ingestion/extraction
-
--- Dashboard for interactive data visualisation
-
-Pipeline Architecture
+## Pipeline Architecture
 
 API → Extract → Staging Table → Transform → Quality Checks → Final Table → Dashboard
 
 
-Project Structure
+## Project Structure
 <img width="1136" height="1252" alt="image" src="https://github.com/user-attachments/assets/0b61cf55-5757-40f9-a9d6-240ce45d5221" />
 
-Tech Stack
--- Python
--- PostgreSQL
--- Streamlit
--- REST API
+## Tech Stack
+-- Python\
+-- PostgreSQL\
+-- Streamlit\
+-- REST API\
 
 
-Setup Instructions (Mac)
+## Setup Instructions (Mac)
 1. Clone the repository
 git clone <your-repo-url>
 cd etl_pipeline_project
@@ -74,8 +67,8 @@ python main.py
 6. Run the Streamlit dashboard
 streamlit run app.py
 
-Future Improvements:
+## Future Improvements:
 Will write them when I think of any lol
 
-Troubleshooting:
+## Troubleshooting:
 Due to a pathing issue (which will be fixed later on), to run the code and view the streamlit dashboard, run the following terminal command from the project root: PYTHONPATH=src streamlit run dashboard/app.py
