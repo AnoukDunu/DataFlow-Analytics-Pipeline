@@ -54,7 +54,7 @@ DB_USER=
 DB_PASSWORD=
 ```
 
-5. Set up PostgreSQL database (schema found in 'src/database/database schema') by pasting the following lines in psql terminal
+5. Set up PostgreSQL database (schema found in 'src/database/database schema') by pasting the following lines in psql terminal\
 Staging Table Schema:
 ```
 CREATE TABLE stg_products (
