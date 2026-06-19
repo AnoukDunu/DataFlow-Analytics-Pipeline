@@ -4,6 +4,7 @@
 DataFlow Analytics Pipeline is an end-to-end ETL project that simulates a real-world data engineering workflow. It ingests product data from a REST API, processes and validates the data, stores it in a PostgreSQL database using a staged architecture, and visualises key business insights through an interactive dashboard.
 
 This project demonstrates core data engineering concepts including API ingestion, transformation logic, data quality checks, and incremental loading.\
+
 Key learnings taken from my initial [ETL Pipeline project](https://github.com/AnoukDunu/ETL-Pipeline) have been acknowledged and implemented here!
 
 ## Project Features
@@ -55,7 +56,7 @@ DB_USER=
 DB_PASSWORD=
 ```
 
-5. Set up PostgreSQL database (schema found in 'src/database/database schema') by pasting the following lines in psql terminal\
+5. Set up PostgreSQL database (schema found in 'src/database/database schema') by pasting in psql terminal\
 Staging Table Schema:
 ```
 CREATE TABLE stg_products (
