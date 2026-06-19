@@ -104,8 +104,11 @@ PYTHONPATH=src streamlit run dashboard/app.py
 - Aim to create a more customisable streamlit dashboard with:
   - Login functionality
   - Use multiple data sources (API, CSV etc.) to extract and transform data
-  - Include the functionality to create database schemas from within the ETL Dashboard    
+  - Include the functionality to create database schemas from within the ETL Dashboard
+  - Host the entire pipeline on a server
+  - Incorporate the pipeline into a larger data warehousing project    
   
 
 ## Troubleshooting:
 Due to a pathing issue (which will be fixed later on), to run the code and view the streamlit dashboard, run the following terminal command from the project root: PYTHONPATH=src streamlit run dashboard/app.py
+
