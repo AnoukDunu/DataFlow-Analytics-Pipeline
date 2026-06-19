@@ -110,5 +110,7 @@ PYTHONPATH=src streamlit run dashboard/app.py
   
 
 ## Troubleshooting:
-Due to a pathing issue (which will be fixed later on), to run the code and view the streamlit dashboard, run the following terminal command from the project root: PYTHONPATH=src streamlit run dashboard/app.py
-
+Due to a pathing issue (which will be fixed later on), to run the code and view the streamlit dashboard, run the following terminal command from the project root: 
+```
+PYTHONPATH=src streamlit run dashboard/app.py
+```
