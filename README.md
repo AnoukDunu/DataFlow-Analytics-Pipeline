@@ -94,6 +94,9 @@ python main.py
 ```
 PYTHONPATH=src streamlit run dashboard/app.py
 ```
+## Screenshots:
+<img width="407" height="703" alt="Screenshot 2026-06-19 at 4 36 53 pm" src="https://github.com/user-attachments/assets/7b61bf15-14e8-43a7-8d97-a1478f09eab5" />
+
 ## Future Improvements:
 - Implement Airflow to orchestrate the ETL pipeline (within a Docker container due to MacOS restrictions)
 - Add unit and integrations tests
