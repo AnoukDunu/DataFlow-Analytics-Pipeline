@@ -4,7 +4,7 @@
 DataFlow Analytics Pipeline is an end-to-end ETL project that simulates a real-world data engineering workflow. It ingests product data from a REST API, processes and validates the data, stores it in a PostgreSQL database using a staged architecture, and visualises key business insights through an interactive dashboard.
 
 This project demonstrates core data engineering concepts including API ingestion, transformation logic, data quality checks, and incremental loading.\
-Key learnings taken from my initial (ETL Pipeline project)[https://github.com/AnoukDunu/ETL-Pipeline] have been acknowledged and implemented here!
+Key learnings taken from my initial [ETL Pipeline project](https://github.com/AnoukDunu/ETL-Pipeline) have been acknowledged and implemented here!
 
 ## Project Features
 
@@ -99,9 +99,9 @@ PYTHONPATH=src streamlit run dashboard/app.py
 - Add unit and integrations tests
 - Design data transform logic to be more modular
 - Aim to create a more customisable streamlit dashboard with:
--     Login functionality
--     Use multiple data sources (API, CSV etc.) to extract and transform data
--     Include the functionality to create database schemas from within the ETL Dashboard    
+  - Login functionality
+  - Use multiple data sources (API, CSV etc.) to extract and transform data
+  - Include the functionality to create database schemas from within the ETL Dashboard    
   
 
 ## Troubleshooting:
