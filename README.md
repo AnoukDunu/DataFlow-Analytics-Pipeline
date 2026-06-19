@@ -34,8 +34,8 @@ API → Extract → Staging Table → Transform → Quality Checks → Final Tab
 ## Setup Instructions (Mac)
 1. Clone the repository
 ```
-git clone <your-repo-url>
-cd etl_pipeline_project
+git clone https://github.com/AnoukDunu/DataFlow-Analytics-Pipeline.git
+cd DataFlow-Analytics-Pipeline
 ```
 2. Create virtual environment
 ```
@@ -46,30 +46,53 @@ source venv/bin/activate
 ```
 pip install -r requirements.txt
 ```
-4. Configure environment variables
+4. Configure environment variables in .env
+```
+DB_HOST=
+DB_NAME=
+DB_USER=
+DB_PASSWORD=
+```
 
-Create a .env file:
+5. Set up PostgreSQL database (schema found in 'src/database/database schema') by pasting the following lines in psql terminal
+Staging Table Schema:
+```
+CREATE TABLE stg_products (
+    id INT,
+    title VARCHAR(255),
+    price DECIMAL(10, 2),
+    description TEXT,
+    category VARCHAR(255),
+    image VARCHAR(255),
+    rating JSONB,
+    loaded_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+```
+Final Table schema:
+```
+CREATE TABLE cln_products (
+    id INT PRIMARY KEY,
+    title VARCHAR(255),
+    price DECIMAL(10, 2),
+    description TEXT,
+    category VARCHAR(255),
+    image VARCHAR(255),
+    rating_rate FLOAT,
+    rating_count INTEGER,
+    estimated_revenue FLOAT,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+```
 
-DB_HOST=localhost
-
-DB_NAME=etl_db
-
-DB_USER=postgres
-
-DB_PASSWORD=yourpassword
-
-DB_PORT=5432
-
-5. Set up PostgreSQL database
-Create database: etl_db
-Create required tables (if not automated in load.py)
-
-7. Run the ETL pipeline
+6. Run the ETL pipeline
+```
 python main.py
-
-6. Run the Streamlit dashboard
-streamlit run app.py
-
+```
+7. Run the Streamlit dashboard (Check troubleshooting notes below)\
+~streamlit run app.py~
+```
+PYTHONPATH=src streamlit run dashboard/app.py
+```
 ## Future Improvements:
 Will write them when I think of any lol
 
