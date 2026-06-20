@@ -100,7 +100,7 @@ PYTHONPATH=src streamlit run dashboard/app.py
 
 ## Future Improvements:
 - Implement Airflow to orchestrate the ETL pipeline (within a Docker container due to MacOS restrictions)
-- Add unit and integrations tests
+- Add unit and integrations tests using pytest
 - Design data transform logic to be more modular
 - Aim to create a more customisable streamlit dashboard with:
   - Login functionality
