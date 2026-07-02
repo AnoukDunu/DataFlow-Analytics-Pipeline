@@ -91,7 +91,6 @@ CREATE TABLE cln_products (
 python main.py
 ```
 7. Run the Streamlit dashboard (Check troubleshooting notes below)\
-~streamlit run app.py~
 ```
 PYTHONPATH=src streamlit run dashboard/app.py
 ```
@@ -111,7 +110,18 @@ PYTHONPATH=src streamlit run dashboard/app.py
   
 
 ## Troubleshooting:
-Due to a pathing issue (which will be fixed later on), to run the code and view the streamlit dashboard, run the following terminal command from the project root: 
+- Due to a pathing issue (which will be fixed later on), to run the code and view the streamlit dashboard, run the following terminal command from the project root: 
 ```
 PYTHONPATH=src streamlit run dashboard/app.py
+```
+- If you get the following error on MacOS, a manual clean installation of numpy will need to be done inside the virtual environment.
+Error Message:
+```
+"collections.cpython-39-darwin.so Not Opened ex Apple could not verify collections.cpython-39- ne. darwin.so is free of malware that may harm your Mac or compromise your privacy."
+```
+Clean numpy install:
+```
+pip uninstall numpy -y
+
+pip install --force-reinstall numpy
 ```
