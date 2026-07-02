@@ -125,7 +125,8 @@ pip uninstall numpy -y
 
 pip install --force-reinstall numpy
 ```
-However, you may still get an error in the terminal when running 'python main.py'. You can click through the errors and still pipeline.\n
+However, you may still get an error in the terminal when running 'python main.py'. You can click through the errors and still pipeline.
+
 In MacOS, the following can be done to avoid this error as well:
 <img width="706" height="203" alt="Screenshot 2026-07-02 at 4 38 27 pm" src="https://github.com/user-attachments/assets/5f41b4a8-1603-44ef-a21b-0ed68af5a2a4" />
 
