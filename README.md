@@ -114,8 +114,8 @@ PYTHONPATH=src streamlit run dashboard/app.py
 ```
 PYTHONPATH=src streamlit run dashboard/app.py
 ```
-- If you get the following error on MacOS, a manual clean installation of numpy will need to be done inside the virtual environment.
-Error Message:
+- If you get the following error on MacOS, a manual clean installation of numpy will need to be done inside the virtual environment.\n
+ Error Message:
 ```
 "collections.cpython-39-darwin.so Not Opened ex Apple could not verify collections.cpython-39- ne. darwin.so is free of malware that may harm your Mac or compromise your privacy."
 ```
@@ -125,3 +125,7 @@ pip uninstall numpy -y
 
 pip install --force-reinstall numpy
 ```
+However, you may still get an error in the terminal when running 'python main.py'. You can click through the errors and still pipeline.\n
+In MacOS, the following can be done to avoid this error as well:
+<img width="706" height="203" alt="Screenshot 2026-07-02 at 4 38 27 pm" src="https://github.com/user-attachments/assets/5f41b4a8-1603-44ef-a21b-0ed68af5a2a4" />
+
